@@ -1,6 +1,6 @@
 # Dash docsets for scientific Python
 
-Provides docsets for the [Dash](http://kapeli.com/dash) documentation browser, for stable builds of the following scientific Python packages:
+Provides docsets for the [Dash](http://kapeli.com/dash) and [Zeal](http://zealdocs.org/) documentation browsers, for stable builds of the following scientific Python packages:
 
 * [NumPy](http://docs.scipy.org/doc/numpy/)
 * [SciPy](http://docs.scipy.org/doc/scipy/reference/)
@@ -14,7 +14,7 @@ All docsets are set to use the Python language family and are added under the `p
 Add any or all of the following feeds to Dash:
 
 * NumPy: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/numpy.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/numpy.xml)
-* SciPy: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/scipy.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/numpy.xml)
+* SciPy: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/scipy.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/scipy.xml)
 * pandas: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/pandas.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/pandas.xml)
 * statsmodels: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/statsmodels.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/statsmodels.xml)
 

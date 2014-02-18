@@ -6,6 +6,7 @@ Provides docsets for the [Dash](http://kapeli.com/dash) and [Zeal](http://zealdo
 * [SciPy](http://docs.scipy.org/doc/scipy/reference/)
 * [pandas](http://pandas.pydata.org/pandas-docs/stable/)
 * [statsmodels](http://statsmodels.sourceforge.net/stable/)
+* [matplotlib](http://matplotlib.org/)
 
 All docsets are set to use the Python language family and are added under the `python:` keyword by default. The scripts used to build the docsets are included.
 
@@ -17,6 +18,7 @@ Add any or all of the following feeds to Dash:
 * SciPy: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/scipy.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/scipy.xml)
 * pandas: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/pandas.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/pandas.xml)
 * statsmodels: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/statsmodels.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/statsmodels.xml)
+* Matplotlib: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/matplotlib.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/matplotlib.xml)
 
 ## Building the docsets
 

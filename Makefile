@@ -22,6 +22,9 @@ build-scipy:
 
 build-statsmodels:
 	./build-docset.sh statsmodels source/statsmodels.sourceforge.net/stable
+	
+build-matplotlib:
+	./build-docset.sh Matplotlib source/matplotlib.org
 
 fetch-pandas:
 	wget -r --no-parent -P source http://pandas.pydata.org/pandas-docs/stable/
@@ -41,15 +44,20 @@ fetch-scipy:
 fetch-statsmodels:
 	wget -r --no-parent -P source http://statsmodels.sourceforge.net/stable/
 	wget -r --no-parent -P source http://statsmodels.sourceforge.net/stable/_static/searchtools.js
+	
+fetch-matplotlib:
+	wget -r --no-parent -P source http://matplotlib.org/contents.html
 
 fetch:
 	make fetch-pandas
 	make fetch-numpy
 	make fetch-scipy
 	make fetch-statsmodels
+	make fetch-matplotlib
 
 build:
 	make build-pandas
 	make build-numpy
 	make build-scipy
 	make build-statsmodels
+	make build-matplotlib

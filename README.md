@@ -2,6 +2,7 @@
 
 Provides docsets for the [Dash](http://kapeli.com/dash) and [Zeal](http://zealdocs.org/) documentation browsers, for stable builds of the following scientific Python packages:
 
+* [IPython](http://ipython.org/ipython-doc/stable/)
 * [NumPy](http://docs.scipy.org/doc/numpy/)
 * [SciPy](http://docs.scipy.org/doc/scipy/reference/)
 * [pandas](http://pandas.pydata.org/pandas-docs/stable/)
@@ -13,6 +14,7 @@ All docsets are set to use the Python language family and are added under the `p
 
 Add any or all of the following feeds to Dash:
 
+* IPython: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/ipython.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/ipython.xml)
 * NumPy: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/numpy.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/numpy.xml)
 * SciPy: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/scipy.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/scipy.xml)
 * pandas: [https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/pandas.xml](https://raw.github.com/sjpfenninger/dash-docsets/master/feeds/pandas.xml)

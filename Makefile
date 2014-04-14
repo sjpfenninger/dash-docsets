@@ -11,6 +11,9 @@ clean:
 clean-docsets:
 	rm -rf *.docset
 
+build-ipython:
+	./build-docset.sh IPython source/ipython.org/ipython-doc/stable
+
 build-pandas:
 	./build-docset.sh pandas source/pandas.pydata.org/pandas-docs/stable
 
@@ -22,6 +25,9 @@ build-scipy:
 
 build-statsmodels:
 	./build-docset.sh statsmodels source/statsmodels.sourceforge.net/stable
+
+fetch-ipython:
+	wget -r --no-parent -P source http://ipython.org/ipython-doc/stable/
 
 fetch-pandas:
 	wget -r --no-parent -P source http://pandas.pydata.org/pandas-docs/stable/
@@ -43,12 +49,14 @@ fetch-statsmodels:
 	wget -r --no-parent -P source http://statsmodels.sourceforge.net/stable/_static/searchtools.js
 
 fetch:
+	make fetch-ipython
 	make fetch-pandas
 	make fetch-numpy
 	make fetch-scipy
 	make fetch-statsmodels
 
 build:
+	make build-ipython
 	make build-pandas
 	make build-numpy
 	make build-scipy

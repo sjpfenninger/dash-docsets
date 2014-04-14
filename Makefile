@@ -26,6 +26,13 @@ build-scipy:
 build-statsmodels:
 	./build-docset.sh statsmodels source/statsmodels.sourceforge.net/stable
 
+build-seaborn:
+	find source/stanford.edu/~mwaskom/software/seaborn -maxdepth 1 -name '*.html' -type f -exec sed -i "" 's|//netdna.bootstrapcdn.com|netdna.bootstrapcdn.com|g' {} \;
+	find source/stanford.edu/~mwaskom/software/seaborn -mindepth 2 -name '*.html' -type f -exec sed -i "" 's|//netdna.bootstrapcdn.com|../netdna.bootstrapcdn.com|g' {} \;
+	find source/stanford.edu/~mwaskom/software/seaborn -maxdepth 1 -name '*.html' -type f -exec sed -i "" 's|http://cdn.mathjax.org|cdn.mathjax.org|g' {} \;
+	find source/stanford.edu/~mwaskom/software/seaborn -mindepth 2 -name '*.html' -type f -exec sed -i "" 's|http://cdn.mathjax.org|../cdn.mathjax.org|g' {} \;
+	./build-docset.sh seaborn source/stanford.edu/~mwaskom/software/seaborn js
+
 fetch-ipython:
 	wget -r --no-parent -P source http://ipython.org/ipython-doc/stable/
 
@@ -48,12 +55,19 @@ fetch-statsmodels:
 	wget -r --no-parent -P source http://statsmodels.sourceforge.net/stable/
 	wget -r --no-parent -P source http://statsmodels.sourceforge.net/stable/_static/searchtools.js
 
+fetch-seaborn:
+	wget -r --no-parent -P source http://stanford.edu/~mwaskom/software/seaborn/
+	wget -r --no-parent -P source http://stanford.edu/~mwaskom/software/seaborn/_static/searchtools.js
+	wget -r --no-parent -P source/stanford.edu/~mwaskom/software/seaborn/ http://cdn.mathjax.org/mathjax/latest/MathJax.js
+	wget -r --no-parent -P source/stanford.edu/~mwaskom/software/seaborn/ https://netdna.bootstrapcdn.com/bootswatch/3.0.0/flatly/bootstrap.min.css
+
 fetch:
 	make fetch-ipython
 	make fetch-pandas
 	make fetch-numpy
 	make fetch-scipy
 	make fetch-statsmodels
+	make fetch-seaborn
 
 build:
 	make build-ipython
@@ -61,3 +75,4 @@ build:
 	make build-numpy
 	make build-scipy
 	make build-statsmodels
+	make build-seaborn

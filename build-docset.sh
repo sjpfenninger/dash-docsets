@@ -6,7 +6,7 @@
 
 doc2dash -n ${1} ${2}
 /usr/libexec/PlistBuddy -c "Set :DocSetPlatformFamily 'python'" ${1}.docset/Contents/Info.plist
-/usr/libexec/PlistBuddy -c "Add :dashIndexFilePath string 'genindex.html'" ${1}.docset/Contents/Info.plist
+/usr/libexec/PlistBuddy -c "Add :dashIndexFilePath string 'index.html'" ${1}.docset/Contents/Info.plist
 if [ "${3}" = "js" ]; then
     /usr/libexec/PlistBuddy -c "Add :isJavaScriptEnabled bool true" ${1}.docset/Contents/Info.plist
 fi
